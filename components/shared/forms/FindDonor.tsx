@@ -25,6 +25,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import DonorCard from "../DonorCard";
+import { timeStamp } from "console";
 
 interface Props {
   user: {
@@ -59,8 +60,21 @@ const FindDonors = () => {
     setDonors(donorList);
   };
 
+  const getDate = (timestamp: any) => {
+    const date = new Date(timestamp);
+    const options = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    const formattedDate = date.toLocaleDateString("en-US", options);
+
+    return formattedDate;
+  };
+
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col h-full w-full">
       <div className="flex justify-center items-center w-full p-4 md:p-8 lg:p-12">
         <Form {...form}>
           <form
@@ -139,7 +153,7 @@ const FindDonors = () => {
               </button>
             </div>
             <div className="border-t-2 border-neutral-100 px-6 py-3 dark:border-neutral-600 dark:text-neutral-50">
-              Joined on :- {donor.createdAt.toString()}
+              Joined on :- {getDate(donor.createdAt.toString())}
             </div>
           </div>
         ))}

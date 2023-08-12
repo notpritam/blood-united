@@ -24,8 +24,8 @@ const Header = () => {
       </div>
       <div className="flex gap-2 items-center">
         <Link href={"/find"}>Find Donor</Link>
-        <Link href={"/register"}>Become Donor</Link>
-        <Link href={"/eligibilty"}>Eligibilty</Link>
+        <Link href={"/register"}>Add Donor</Link>
+        <Link href={"/eligibile"}>Eligibilty</Link>
 
         {!isLoaded || !userId ? (
           <Link href={"/sign-in"}>Sign In</Link>

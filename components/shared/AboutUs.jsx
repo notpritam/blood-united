@@ -3,20 +3,20 @@ const AboutUs = () => {
     <>
       <section className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden">
         <div className="container">
-          <div className="flex flex-wrap items-center justify-between -mx-4">
-            <div className="w-full px-4 lg:w-6/12">
-              <div className="flex items-center -mx-3 sm:-mx-4">
+          <div className="flex flex-wrap p-12 items-center justify-between mx-4">
+            <div className="w-full px-4  lg:w-6/12">
+              <div className="flex items-center  -mx-3 sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                      src="https://cdn.pixabay.com/photo/2020/07/21/19/41/blood-5427228_1280.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                      src="https://images.unsplash.com/photo-1603827457577-609e6f42a45e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -25,7 +25,7 @@ const AboutUs = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
                     <img
-                      src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                      src="https://images.unsplash.com/photo-1582719202047-76d3432ee323?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -606,15 +606,15 @@ const AboutUs = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
                 <span className="block mb-2 text-lg font-semibold text-primary">
-                  Why Choose Us
+                  Why Donate Blood
                 </span>
                 <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
-                  Make your customers happy by giving services.
+                  Be the Lifeline: Donate Blood, Save Lives.
                 </h2>
                 <p className="mb-8 text-base text-body-color">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                  Be a lifeline. Donate blood. Save lives. Your simple act of
+                  generosity can bring light to someone's darkest moments. Join
+                  the movement today!
                 </p>
                 <a
                   href="/#"

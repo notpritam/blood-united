@@ -50,7 +50,6 @@ export default function Home() {
         {/* Footer */}
 
         <div className="h-12"></div>
-        <Footer />
       </div>
     </main>
   );
