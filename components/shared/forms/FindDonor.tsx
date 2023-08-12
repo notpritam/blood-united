@@ -53,7 +53,7 @@ const FindDonors = () => {
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof donorSchema>) => {
+  const onSubmit = async (values: z.infer<typeof findDonorSchema>) => {
     const donorList = await getDonors(values.city, values.bloodType);
 
     setDonors(donorList);
