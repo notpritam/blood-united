@@ -43,7 +43,7 @@ interface Donor {
   createdAt: Date;
 }
 
-const FindDonors = ({ user }: Props) => {
+const FindDonors = () => {
   const [donors, setDonors] = useState<Donor[]>([]);
   const form = useForm({
     resolver: zodResolver(findDonorSchema),
