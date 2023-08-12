@@ -54,7 +54,7 @@ const RegisterDonor = ({ user }: Props) => {
       userId: user.id,
     });
 
-    // router.push("/");
+    router.push("/");
   };
 
   return (

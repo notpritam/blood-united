@@ -11,8 +11,10 @@ import Header from "@/components/shared/Header";
 import AboutUs from "@/components/shared/AboutUs";
 import Footer from "@/components/shared/Footer";
 import Hero from "@/components/shared/Hero";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <main>
       <div>
@@ -25,7 +27,10 @@ export default function Home() {
               Your blood donation can make a significant impact in saving lives.
               Join us in this noble cause.
             </p>
-            <button className="mt-6 max-w-[300px] bg-red-500 text-white py-2 px-6 rounded-full hover:bg-red-700">
+            <button
+              onClick={() => router.push("/register")}
+              className="mt-6 max-w-[300px] bg-red-500 text-white py-2 px-6 rounded-full hover:bg-red-700"
+            >
               Donate Now
             </button>
           </div>

@@ -3,8 +3,8 @@ import "../globals.css";
 
 import { Inter } from "next/font/google";
 export const metadata = {
-  title: "Threads",
-  description: "A NextJs 13 Threads Clone",
+  title: "Blood United",
+  description: "Saving Lives, Together We Unite",
 };
 
 const inter = Inter({ subsets: ["latin"] });
