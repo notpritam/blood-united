@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { createDonor, getDonors } from "@/lib/actions/donor.action";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { FC, useState } from "react";
 import {
   Form,
   FormControl,
@@ -68,7 +68,7 @@ const FindDonors = () => {
       month: "long",
       day: "numeric",
     };
-    const formattedDate = date.toLocaleDateString("en-US", options);
+    const formattedDate = date.toLocaleDateString("en-US", options as any);
 
     return formattedDate;
   };
