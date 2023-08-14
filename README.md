@@ -1,6 +1,6 @@
-# Blood Donor Finder
+# Blood United - Blood Donor Finder
 
-The Blood Donor Finder is a web application designed to simplify the process of finding blood donors based on blood type and city. It enables users to quickly search for potential blood donors and facilitates user registration for those willing to contribute.
+The Blood United is a web application designed to simplify the process of finding blood donors based on blood type and city. It enables users to quickly search for potential blood donors and facilitates user registration for those willing to contribute.
 
 ## Features
 
