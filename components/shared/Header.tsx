@@ -4,7 +4,6 @@ import { UserButton, useAuth } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../../public/assets/img/logo.png";
 
 const Header = () => {
   const { isLoaded, userId, sessionId, getToken } = useAuth();
@@ -15,7 +14,7 @@ const Header = () => {
         <div>
           <Link href="/" className="flex items-center gap-4">
             <Image
-              src={logo}
+              src={"/assets/img/Logo.svg"}
               alt="Blood United Logo"
               height={40}
               width={40}
