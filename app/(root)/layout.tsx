@@ -25,7 +25,7 @@ export default function RootLayout({
           {children}
 
           <Footer />
-        </body>
+        </body>{" "}
       </html>
     </ClerkProvider>
   );

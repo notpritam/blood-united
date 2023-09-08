@@ -10,7 +10,7 @@ const Header = () => {
   const { isLoaded, userId, sessionId, getToken } = useAuth();
 
   return (
-    <header className="w-full fixed top-4 m-auto flex items-center justify-center">
+    <header className="w-full fixed top-4 m-auto flex items-center z-[999] backdrop-blur-md backdrop-opacity-10 justify-center">
       <nav className="flex bg-white shadow-lg  top-0 w-[90%] rounded-3xl items-center justify-between p-4 pl-12 pr-12 ">
         <div>
           <Link href="/" className="flex items-center gap-4">
