@@ -1,16 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { UserButton } from "@clerk/nextjs";
-import { userAgent } from "next/server";
-import Link from "next/link";
-
-import { currentUser } from "@clerk/nextjs";
-import { useAuth } from "@clerk/nextjs";
-import Header from "@/components/shared/Header";
 import AboutUs from "@/components/shared/AboutUs";
-import Footer from "@/components/shared/Footer";
-import Hero from "@/components/shared/Hero";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -37,7 +27,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <AboutUs></AboutUs>
+        <AboutUs />
 
         {/* Contact Section */}
         <section className="bg-gray-200 py-16">
