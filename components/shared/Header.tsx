@@ -20,10 +20,12 @@ const Header = () => {
               height={40}
               width={40}
             ></Image>
-            <span className="text-[1.25rem]">Blood United</span>
+            <span className="text-[1.35rem] tracking-wide font-medium">
+              Blood United
+            </span>
           </Link>
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-4  items-center text-[1.2rem]">
           <Link href={"/find"}>Find Donor</Link>
           <Link href={"/register"}>Add Donor</Link>
           <Link href={"/eligibile"}>Eligibilty</Link>
