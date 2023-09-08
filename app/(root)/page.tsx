@@ -27,7 +27,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex-1">
-            <div className="h-[700px] relative bg-red-600 rounded-full rounded-bl-none overflow-hidden w-[700px]">
+            <div className="h-[700px] border-[3px] relative bg-red-600 rounded-full rounded-bl-none overflow-hidden w-[700px]">
               <Image
                 className="h-[700px] w-[700px] absolute -top-8 left-8 object-coverj object-bottom"
                 height={800}
@@ -60,6 +60,17 @@ export default function Home() {
         </div>
         {/* About Section */}
         <AboutUs />
+
+        <div className="flex flex-col items-center text-white ">
+          <div className="flex flex-col items-center gap-4 mt-24">
+            <span className="uppercase text-[1.5rem] tracking-widest">
+              Get Involved
+            </span>
+            <span className="text-[3rem]">Ways to Help</span>
+
+            <div className="h-[4px] bg-red-400 w-[100px]"></div>
+          </div>
+        </div>
 
         {/* Contact Section */}
         <section className=" py-16">
