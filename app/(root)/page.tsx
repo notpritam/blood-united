@@ -44,14 +44,14 @@ export default function Home() {
             <h2 className="text-white text-left text-[5rem] font-semibold mb-4 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text bg-300% animate-gradient">
               Be a Hero, Donate Blood Today
             </h2>
-            <p className="text-white text-left text-[1.5rem] text-lg">
+            <p className="text-white text-left text-[1.8rem] text-lg">
               Your blood donation can make a significant impact in saving lives.
               <br />
               Join us in this noble cause.
             </p>
             <button
               onClick={() => router.push("/register")}
-              className="mt-6 max-w-[300px] bg-red-500 text-[1.2rem] text-white py-2 px-6 rounded-full rounded-tr-none hover:bg-red-700"
+              className="mt-6 max-w-[300px] bg-red-500  text-white py-2 px-6 text-[1.8rem] rounded-full rounded-tr-none hover:bg-red-700"
             >
               Donate Now
             </button>
