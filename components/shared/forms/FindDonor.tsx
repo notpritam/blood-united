@@ -77,12 +77,12 @@ const FindDonors = () => {
   };
 
   return (
-    <div className="flex flex-col h-full w-full">
-      <div className="flex justify-center items-center w-full p-4 md:p-8 lg:p-12">
+    <div className="flex flex-col h-full w-full bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+      <div className="w-full bg-red-400 p-4">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="flex gap-10 w-full flex-col lg:flex-row items-center justify-center"
+            className="flex gap-10 w-full flex-col lg:flex-row items-center justify-center text-white"
           >
             <FormField
               control={form.control}
@@ -95,7 +95,7 @@ const FindDonors = () => {
                   <FormControl className="">
                     <Input
                       type="text"
-                      className="account-form_input no-focus "
+                      className="account-form_input no-focus text-black"
                       {...field}
                     />
                   </FormControl>
@@ -108,16 +108,35 @@ const FindDonors = () => {
               control={form.control}
               name="bloodType"
               render={({ field }) => (
-                <FormItem className="flex flex-col  gap-3">
-                  <FormLabel className="text-base-semibold text-light-2">
+                <FormItem className="flex dark flex-col  gap-3">
+                  <FormLabel className=" text-base-semibold ">
                     Blood Type
                   </FormLabel>
-                  <FormControl className="">
-                    <Input
+                  <FormControl className="text-white">
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl className="text-white">
+                        <SelectTrigger className="text-white">
+                          <SelectValue placeholder="Blood Type" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="a+">A+</SelectItem>
+                        <SelectItem value="ab+">AB+</SelectItem>
+                        <SelectItem value="ab-">AB-</SelectItem>
+                        <SelectItem value="b-">B-</SelectItem>
+                        <SelectItem value="o+">O+</SelectItem>
+                        <SelectItem value="a-">A-</SelectItem>
+                        <SelectItem value="b+">B+</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    {/* <Input
                       type="text"
                       className="account-form_input no-focus "
                       {...field}
-                    />
+                    /> */}
                   </FormControl>
                   <FormMessage />
                 </FormItem>
