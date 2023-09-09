@@ -105,7 +105,7 @@ export default function Home() {
             {wayToHelp.map((item) => (
               <div className="flex relative flex-col justify-end h-[300px] rounded-xl overflow-hidden hover:shadow-2xl duration-100 transition-all ease-in-out hover:border-[2px] gap-4">
                 <img
-                  className="absolute object-cover h-full w-full"
+                  className="absolute object-cover rounded-xl overflow-hidden h-full w-full"
                   src={item.image}
                 ></img>
 
