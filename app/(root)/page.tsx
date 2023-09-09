@@ -4,6 +4,36 @@ import AboutUs from "@/components/shared/AboutUs";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
+const wayToHelp = [
+  {
+    id: "",
+    image:
+      "https://template79832.motopreview.com/mt-demo/79800/79832/mt-content/uploads/2019/04/mt-1802-home-img01.jpg",
+    title: "Donate Blood",
+    subTitle: "Donate blood today, Help save lives.",
+    link: "/donate",
+    buttonText: "Donate Now",
+  },
+  {
+    id: "",
+    image:
+      "https://template79832.motopreview.com/mt-demo/79800/79832/mt-content/uploads/2019/04/mt-1802-home-img02.jpg",
+    title: "Volunteer Team",
+    subTitle: "We are always looking for your help.",
+    link: "Become a Volunteer",
+    buttonText: "Become a Volunteer",
+  },
+  {
+    id: "",
+    image:
+      "https://template79832.motopreview.com/mt-demo/79800/79832/mt-content/uploads/2019/04/mt-1802-home-img03.jpg",
+    title: "Donate Money",
+    subTitle: "Your financial gift can help people who need it most",
+    link: "",
+    buttonText: "Donate Now",
+  },
+];
+
 export default function Home() {
   const router = useRouter();
   return (
@@ -61,7 +91,7 @@ export default function Home() {
         {/* About Section */}
         <AboutUs />
 
-        <div className="flex flex-col items-center text-white ">
+        <div className="flex flex-col  max-w-[1440px] m-auto w-full items-center text-white ">
           <div className="flex flex-col items-center gap-4 mt-24">
             <span className="uppercase text-[1.5rem] tracking-widest">
               Get Involved
@@ -69,6 +99,24 @@ export default function Home() {
             <span className="text-[3rem]">Ways to Help</span>
 
             <div className="h-[4px] bg-red-400 w-[100px]"></div>
+          </div>
+
+          <div className="grid grid-cols-3 gap-8 p-8 w-full  relative">
+            {wayToHelp.map((item) => (
+              <div className="flex relative flex-col justify-end h-[300px] rounded-xl overflow-hidden hover:shadow-2xl duration-100 transition-all ease-in-out hover:border-[2px] gap-4">
+                <img
+                  className="absolute object-cover h-full w-full"
+                  src={item.image}
+                ></img>
+
+                <div className="z-[2] backdrop-blur-sm bg-black/10 flex flex-col items-start p-2">
+                  <span className="text-[2rem]">{item.title}</span>
+                  <span className="text-[]">{item.subTitle}</span>
+
+                  <button>{item.buttonText}</button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
