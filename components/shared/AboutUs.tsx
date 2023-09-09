@@ -35,15 +35,15 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="w-full flex-1 flex p-8 pt-[4rem]">
+        <div className="w-full flex-1 flex p-8 ">
           <div className="">
-            <span className="block mb-2 text-lg font-semibold text-primary">
+            <span className="block mb-2 text-[2rem] text-gray-300 font-semibold text-primary">
               Why Donate Blood
             </span>
-            <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
+            <h2 className="mb-8 text-[3.5rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text bg-300% animate-gradient font-bold text-dark">
               Be the Lifeline: Donate Blood, Save Lives.
             </h2>
-            <p className="mb-8 text-base text-body-color">
+            <p className="mb-8 text-[1.3rem] text-body-color">
               Be a lifeline. Donate blood. Save lives. Your simple act of
               generosity can bring light to someone's darkest moments. Join the
               movement today!

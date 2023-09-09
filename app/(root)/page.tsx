@@ -41,7 +41,7 @@ export default function Home() {
       <div>
         <section className="bg-cover bg-center bg-no-repeat flex p-16 pt-[12rem]  w-full py-16 ">
           <div className="flex flex-col justify-center pl-16 text-lext  flex-1 text-center">
-            <h2 className="text-white text-left text-[5rem] font-semibold mb-4">
+            <h2 className="text-white text-left text-[5rem] font-semibold mb-4 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text bg-300% animate-gradient">
               Be a Hero, Donate Blood Today
             </h2>
             <p className="text-white text-left text-[1.5rem] text-lg">
@@ -59,10 +59,10 @@ export default function Home() {
           <div className="flex-1">
             <div className="h-[700px] border-[3px] relative bg-red-600 rounded-full rounded-bl-none overflow-hidden w-[700px]">
               <Image
-                className="h-[700px] w-[700px] absolute -top-8 left-8 object-coverj object-bottom"
+                className="h-[700px] w-[700px] absolute -top-8 left-8 shadow-lg backdrop-blur-lg object-coverj object-bottom"
                 height={800}
-                width={500}
-                src="/assets/img/hero.png"
+                width={800}
+                src="/assets/img/herooo.jpg"
                 alt="Blood Donation Image"
               ></Image>
             </div>
@@ -92,11 +92,13 @@ export default function Home() {
         <AboutUs />
 
         <div className="flex flex-col  max-w-[1440px] m-auto w-full items-center text-white ">
-          <div className="flex flex-col items-center gap-4 mt-24">
-            <span className="uppercase text-[1.5rem] tracking-widest">
+          <div className="flex flex-col items-center gap-4 mt-24 mb-8">
+            <span className="uppercase text-[1.5rem] text-gray-300 tracking-widest">
               Get Involved
             </span>
-            <span className="text-[3rem]">Ways to Help</span>
+            <span className="text-[3rem] font-medium bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text bg-300% animate-gradient ">
+              Ways to Help
+            </span>
 
             <div className="h-[4px] bg-red-400 w-[100px]"></div>
           </div>
@@ -109,11 +111,13 @@ export default function Home() {
                   src={item.image}
                 ></img>
 
-                <div className="z-[2] backdrop-blur-sm bg-black/10 flex flex-col items-start p-2">
+                <div className="z-[2]  backdrop-opacity-10 flex flex-col items-start p-2 px-6">
                   <span className="text-[2rem]">{item.title}</span>
                   <span className="text-[]">{item.subTitle}</span>
 
-                  <button>{item.buttonText}</button>
+                  <button className="p-2 px-4 mt-4 mb-2 bg-white rounded-tr-none text-black rounded-full">
+                    {item.buttonText}
+                  </button>
                 </div>
               </div>
             ))}
@@ -123,10 +127,10 @@ export default function Home() {
         {/* Contact Section */}
         <section className=" py-16">
           <div className="container mx-auto text-center">
-            <h2 className="text-gray-800 text-3xl font-semibold mb-4">
+            <h2 className="text-gray-800 text-[3.5rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text bg-300% animate-gradient font-semibold mb-4">
               Contact Us
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-300 text-lg">
               Have questions or want to get involved? Reach out to us at
               info@blooddonation.org
             </p>

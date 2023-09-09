@@ -4,7 +4,6 @@ import { UserButton, useAuth } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const Header = () => {
   const { isLoaded, userId, sessionId, getToken } = useAuth();
 
@@ -19,12 +18,12 @@ const Header = () => {
               height={40}
               width={40}
             ></Image>
-            <span className="text-[1.35rem] tracking-wide font-medium">
+            <span className="text-[1.45rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text bg-300% animate-gradient tracking-wide font-medium">
               Blood United
             </span>
           </Link>
         </div>
-        <div className="flex gap-4  items-center text-[1.2rem]">
+        <div className="flex gap-4  items-center tracking-wide text-[1.2rem]">
           <Link href={"/find"}>Find Donor</Link>
           <Link href={"/register"}>Add Donor</Link>
           <Link href={"/eligibile"}>Eligibilty</Link>
