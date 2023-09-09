@@ -103,9 +103,9 @@ export default function Home() {
 
           <div className="grid grid-cols-3 gap-8 p-8 w-full  relative">
             {wayToHelp.map((item) => (
-              <div className="flex relative flex-col justify-end h-[300px] rounded-xl overflow-hidden hover:shadow-2xl duration-100 transition-all ease-in-out hover:border-[2px] gap-4">
+              <div className="flex relative flex-col justify-end h-[300px] rounded-xl overflow-hidden hover:shadow-2xl duration-100 transition-all ease-in-out  gap-4">
                 <img
-                  className="absolute object-cover rounded-xl overflow-hidden h-full w-full"
+                  className="absolute hover:scale-105 duration-200 transition-all ease-in-out object-cover rounded-xl overflow-hidden h-full w-full"
                   src={item.image}
                 ></img>
 
