@@ -18,7 +18,7 @@ async function Page() {
 
         <div className="w-[600px]  bg-gradient-to-r from-gray-700 via-gray-900 to-black translate-y-[15rem]   border">
           <div className=" bg-gray-500 flex items-center justify-center p-4">
-            <span className="text-[2rem]">Register as Donor</span>
+            <span className="text-[2rem] text-gray-300">Register as Donor</span>
           </div>
           <div className="p-8 text-white">
             <RegisterDonor user={userData} />
@@ -45,11 +45,42 @@ async function Page() {
           </span>
         </div>
 
-        <div className="flex justify-center gap-8  p-12 items-center">
-          <div className="h-[200px] w-[200px] bg-white">First</div>
-          <div className="h-[200px] w-[200px] bg-white">First</div>
-          <div className="h-[200px] w-[200px] bg-white">First</div>
-          <div className="h-[200px] w-[200px] bg-white">First</div>
+        <div className="flex justify-center gap-8  mt-[5rem] mb-[5rem] p-12 items-center">
+          <div className=" flex gap-2 items-center hover:shadow-2xl duration-200 transition-all ease-in-out  justify-center rounded-lg flex-col p-4 w-[250px] h-[200px] group bg-white">
+            <img
+              className="h-[4rem] w-[4rem]  group-hover:fill-red-600 group-hover:-translate-y-2 duration-200 ease-in-out transition-all"
+              src="/assets/img/heart.svg"
+            ></img>
+            <span className="text-[2rem] font-bold  text-red-600">2578</span>
+            <span className="text-[1.1rem]">Success Smile</span>
+          </div>
+
+          <div className=" flex gap-2 items-center hover:shadow-2xl duration-200 transition-all ease-in-out  justify-center rounded-lg flex-col p-4 w-[250px] h-[200px] group bg-white">
+            <img
+              className="h-[4rem] w-[4rem]  group-hover:fill-red-600 group-hover:-translate-y-2 duration-200 ease-in-out transition-all"
+              src="/assets/img/doctor.svg"
+            ></img>
+            <span className="text-[2rem] font-bold  text-red-600">3234</span>
+            <span className="text-[1.1rem]">Happy Donors</span>
+          </div>
+
+          <div className=" flex gap-2 items-center hover:shadow-2xl duration-200 transition-all ease-in-out  justify-center rounded-lg flex-col p-4 w-[250px] h-[200px] group bg-white">
+            <img
+              className="h-[4rem] w-[4rem]  group-hover:fill-red-600 group-hover:-translate-y-2 duration-200 ease-in-out transition-all"
+              src="/assets/img/happy.svg"
+            ></img>
+            <span className="text-[2rem] font-bold  text-red-600">2000</span>
+            <span className="text-[1.1rem]">Happy Recipents</span>
+          </div>
+
+          <div className=" flex gap-2 items-center hover:shadow-2xl duration-200 transition-all ease-in-out  justify-center rounded-lg flex-col p-4 w-[250px] h-[200px] group bg-white">
+            <img
+              className="h-[4rem] w-[4rem]  group-hover:fill-red-600 group-hover:-translate-y-2 duration-200 ease-in-out transition-all"
+              src="/assets/img/hospital-solid.svg"
+            ></img>
+            <span className="text-[2rem] font-bold  text-red-600">178</span>
+            <span className="text-[1.1rem]">Total Awards</span>
+          </div>
         </div>
       </div>
     </main>

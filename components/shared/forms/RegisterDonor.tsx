@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -61,14 +60,14 @@ const RegisterDonor = ({ user }: Props) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-10  justify-start"
+        className="flex flex-col gap-10  justify-start text-black"
       >
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem className="flex flex-col  gap-3">
-              <FormLabel className="text-base-semibold text-light-2">
+              <FormLabel className="text-base-semibold text-light-2 text-white">
                 Name
               </FormLabel>
               <FormControl>
@@ -87,7 +86,7 @@ const RegisterDonor = ({ user }: Props) => {
           name="phoneNumber"
           render={({ field }) => (
             <FormItem className="flex flex-col  gap-3">
-              <FormLabel className="text-base-semibold text-light-2">
+              <FormLabel className="text-base-semibold text-light-2 text-white">
                 Phone Number
               </FormLabel>
               <FormControl>
@@ -106,7 +105,7 @@ const RegisterDonor = ({ user }: Props) => {
           name="city"
           render={({ field }) => (
             <FormItem className="flex flex-col  gap-3">
-              <FormLabel className="text-base-semibold text-light-2">
+              <FormLabel className="text-base-semibold text-light-2 text-white">
                 City
               </FormLabel>
               <FormControl className="">
@@ -126,15 +125,29 @@ const RegisterDonor = ({ user }: Props) => {
           name="bloodType"
           render={({ field }) => (
             <FormItem className="flex flex-col  gap-3">
-              <FormLabel className="text-base-semibold text-light-2">
+              <FormLabel className="text-base-semibold text-white">
                 Blood Type
               </FormLabel>
               <FormControl className="">
-                <Input
-                  type="text"
-                  className="account-form_input no-focus "
-                  {...field}
-                />
+                <Select
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                >
+                  <FormControl className="text-black">
+                    <SelectTrigger className="text-black">
+                      <SelectValue placeholder="Blood Type" />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    <SelectItem value="a+">A+</SelectItem>
+                    <SelectItem value="ab+">AB+</SelectItem>
+                    <SelectItem value="ab-">AB-</SelectItem>
+                    <SelectItem value="b-">B-</SelectItem>
+                    <SelectItem value="o+">O+</SelectItem>
+                    <SelectItem value="a-">A-</SelectItem>
+                    <SelectItem value="b+">B+</SelectItem>
+                  </SelectContent>
+                </Select>
               </FormControl>
               <FormMessage />
             </FormItem>
