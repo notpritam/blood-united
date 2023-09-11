@@ -78,7 +78,7 @@ const FindDonors = () => {
 
   return (
     <div className="flex flex-col h-full w-full bg-gradient-to-r from-gray-700 via-gray-900 to-black">
-      <div className="w-full bg-red-400 p-4">
+      <div className="w-full  p-4">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}

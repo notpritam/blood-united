@@ -125,7 +125,7 @@ export default function Home() {
         </div>
 
         {/* Contact Section */}
-        <section className=" py-16">
+        <section className="  py-16">
           <div className="container mx-auto text-center">
             <h2 className="text-gray-800 text-[3.5rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text bg-300% animate-gradient font-semibold mb-4">
               Contact Us
@@ -136,6 +136,20 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        <div className="flex flex-col max-w-[60vw] items-center  gap-8 m-auto text-center bg-gray-700 mt-[10rem] mb-[10rem] px-[4rem] py-[2rem]">
+          <span className="text-[3rem] font-bold text-white">
+            Become A Part Of Great Work Today
+          </span>
+          <span className="text-[1.25rem] text-gray-200">
+            You can give blood at any of our blood donation venues all over the
+            world. We have total sixty thousands donor centers and visit
+            thousands of other venues on various occasions.
+          </span>
+          <button className="uppercase px-[4rem] w-[300px] rounded-2xl py-[1rem] text-white bg-red-600">
+            Join with Us
+          </button>
+        </div>
 
         {/* Footer */}
 
